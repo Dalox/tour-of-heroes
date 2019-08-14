@@ -1,9 +1,11 @@
 <div *ngIf="msgService.messages.length">
   <h2>Messages</h2>
-  <button class="clear" (click)="msgService.clear()">CLEAR</button>
-  <div *ngFor='let msg of msgService.messages'>
-    <p>
-      {{ msg }}
-    </p>
+  <button class="btn btn-outline-dark btn-block my-3" (click)="msgService.clear()">CLEAR</button>
+  <div class="jumbotron">
+    <div class="alert alert-dismissible alert-primary my-1" *ngFor='let msg of msgService.messages'>
+      <p>
+        {{ msg }}
+      </p>
+    </div>
   </div>
 </div>

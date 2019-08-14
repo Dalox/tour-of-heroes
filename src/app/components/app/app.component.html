@@ -1,12 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>{{ title }}</h1>
+<h1 class="display-1 px-3 py-1">{{ title }}</h1>
 <!--
   <heroes></heroes>
 -->
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/heroes">Heroes</a>
+    </li>
+  </ul>
 </nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<div class="p-4">
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
 
