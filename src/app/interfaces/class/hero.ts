@@ -1,4 +1,7 @@
-export class Hero {
+import { hero_types } from '../enum/types'
+
+export interface Hero {
   id: number;
-  name: string
+  name: string;
+  type: hero_types
 }
